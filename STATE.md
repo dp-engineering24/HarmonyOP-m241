@@ -24,3 +24,10 @@
 
 ## Post-Mortem
 **V1 MVP:** Production outage resolved via MCP SQL injection due to Drizzle CLI parsing bug. Schema is now 100% synced.
+
+## V2: Offboarding Engine (Phase 1)
+- [x] **Security Constraints:** Implement MS Graph `disableUser` and `revokeSessions` with deliberate race condition delays 🟢
+- [x] **Soft-Offboarding:** Bypass flaky Shared Mailbox API by generating a manual IT task for retention 🟢
+- [x] **Danger Zone UI:** Add explicit confirmation gate and typing validation in `OffboardButton` 🟢
+- [x] **Audit Logging:** Implemented immutable auditing with target and actor UUID tracking 🟢
+**Status:** 100% Complete 🟢

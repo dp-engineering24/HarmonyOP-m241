@@ -24,7 +24,7 @@ export default function TaskCard({ task, employeeName, role }: TaskCardProps) {
 
   const handleStatusChange = (newStatus: "PENDING" | "IN_PROGRESS" | "BLOCKED" | "DONE") => {
     startTransition(async () => {
-      await updateTaskStatus(task.id, newStatus);
+      await updateTaskStatus(task.id, newStatus as "PENDING" | "DONE");
     });
   };
 
